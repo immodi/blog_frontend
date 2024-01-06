@@ -1,0 +1,12 @@
+.make-post-button {
+    position: relative;
+    width: 25%;
+    font-size: large;
+    /* top: 5dvw; */
+    place-self: center;
+
+}
+
+.mb-6 {
+    margin-bottom: 7rem !important;
+}

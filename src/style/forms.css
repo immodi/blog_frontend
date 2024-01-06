@@ -1,0 +1,48 @@
+.container-custom {
+    background-color: #3D414B;
+    height: 100dvh;
+    width: 100dvw !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.display-3-custom {
+    color: #fff !important;
+}
+
+.btn-custom {
+    background-color: #5F5E6E;
+    color: #fff;
+}
+
+.btn-label-custom {
+    border-color: white !important;
+    color: white !important;
+}
+
+.btn-custom:hover {
+    background-color: #fff;
+    color: #5F5E6E;
+}
+
+.form-label-custom {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.signup-button-custom {
+    color: white !important;
+    align-self: center;
+}
+
+.btn-custom {
+    align-self: center;
+}
+
+.form-custom {
+    display: flex;
+    flex-direction: column;
+}
+  
