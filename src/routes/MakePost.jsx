@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import ErrorPage from "./ErrorPage";
-import ReactQuill from 'react-quill';
+import ReactQuill from 'react-quill/dist/react-quill.js';
 import 'react-quill/dist/quill.snow.css';
-// import 'https://unpkg.com/react-quill@1.3.3/dist/quill.snow.css';
 import '../style/make-post.css'
 import axios from "axios";
 import { Link } from "react-router-dom";

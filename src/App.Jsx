@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
-import NavBar from './components/common/NavBar'
-import Footer from './components/common/Footer'
+import NavBar from './components/common/NavBar.jsx'
+import Footer from './components/common/Footer.jsx'
 import Script from './components/common/Script.jsx'
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -20,7 +20,7 @@ import "primereact/resources/themes/lara-light-cyan/theme.css";
 import useMessage from './hooks/useMessage.js';
 import { useCookies } from 'react-cookie';
 
-export default function App() {
+const App = () => {
     const url = "https://dbackend.alwaysdata.net/"
     const [disableNav, setDisableNav] = useState(false)
     const [mes, messagesObject, setMessagesObject] = useMessage()
@@ -39,7 +39,7 @@ export default function App() {
                 <Routes>
                     <Route path='/' element={<Home setDisableNav={setDisableNav} url={url} />} />
                     <Route path='post/:id' element={<Post url={url} setDisableNav={setDisableNav} userName={credentials.userName} />} />
-                    <Route path='posts' element={<Posts setDisableNav={setDisableNav} />} />
+                    <Route path='posts' element={<Posts setDisableNav={setDisableNav} url={url}/>} />
                     <Route path='make-post' element={<MakePost 
                         isAdmin={isAdmin}
                         setDisableNav={setDisableNav}
@@ -57,3 +57,5 @@ export default function App() {
         </BrowserRouter>
     )
 }
+
+export default App
