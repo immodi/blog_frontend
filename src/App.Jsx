@@ -1,18 +1,18 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
-import NavBar from './components/common/NavBar.jsx'
-import Footer from './components/common/Footer.jsx'
-import Script from './components/common/Script.jsx'
+import NavBar from './components/common/NavBar'
+import Footer from './components/common/Footer'
+import Script from './components/common/Script'
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
-import MakePost from './routes/MakePost.jsx'
-import ErrorPage from './routes/ErrorPage.jsx' 
-import Home from './routes/Home.jsx';
-import About from './routes/About.jsx';
-import Post from './routes/Post.jsx'
-import Posts from './routes/Posts.jsx';
-import SignUp from './routes/SignUp.jsx';
-import Login from './routes/Login.jsx';
+import MakePost from './routes/MakePost'
+import ErrorPage from './routes/ErrorPage' 
+import Home from './routes/Home';
+import About from './routes/About';
+import Post from './routes/Post'
+import Posts from './routes/Posts';
+import SignUp from './routes/SignUp';
+import Login from './routes/Login';
 import { useAuthentication } from './hooks/useAuthentication.js';
 import { PrimeReactProvider } from 'primereact/api';
 import { Messages } from 'primereact/messages';
