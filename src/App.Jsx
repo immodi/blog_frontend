@@ -20,7 +20,7 @@ import "primereact/resources/themes/lara-light-cyan/theme.css";
 import useMessage from './hooks/useMessage.js';
 import { useCookies } from 'react-cookie';
 
-const App = () => {
+export default function App() {
     const url = "https://dbackend.alwaysdata.net/"
     const [disableNav, setDisableNav] = useState(false)
     const [mes, messagesObject, setMessagesObject] = useMessage()
@@ -57,5 +57,3 @@ const App = () => {
         </BrowserRouter>
     )
 }
-
-export default App
