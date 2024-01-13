@@ -1,0 +1,7 @@
+/                     /
+/post/:id             /post/:id
+/posts                /posts
+/make-post            /make-post
+/about                /about
+/login                /login
+/signup               /signup
