@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 
 function Home({ setDisableNav, url }) {
     const [data, setData] = useState([])
-    url = url + "posts/home"
+    url += "posts/home"
     setDisableNav(false)
     useEffect(() => {
         getHomePosts(url, setData)
@@ -22,8 +22,6 @@ function Home({ setDisableNav, url }) {
 function getHomePosts(url, setData) {
     axios.get(url).then(res => {
         setData(res.data.reverse())
-    }).catch(e => {
-        console.log(e.message);
     })
 }
 
