@@ -22,6 +22,8 @@ function Home({ setDisableNav, url }) {
 function getHomePosts(url, setData) {
     axios.get(url).then(res => {
         setData(res.data.reverse())
+    }).catch(e => {
+        console.log(e.message);
     })
 }
 
