@@ -26,7 +26,6 @@ export default function Comment({ url, showComments, setShowComments, data, comm
                                 e.currentTarget.disabled = true
                                 makeComment(url, commentData, content, setLoading)
                             }} className="btn btn-primary btn-sm">Post comment</button>
-                            <button type="button" className="btn btn-outline-primary btn-sm">Cancel</button>
                         </div>
                     </div>
 
